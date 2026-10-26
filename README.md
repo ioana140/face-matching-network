@@ -24,15 +24,15 @@ comparison, and Grad-CAM based explainability analysis.
 ├── config.py                        # dataset paths & hyperparameters (shared config)
 ├── data/                            # dataset loading / pairing pipeline (code only)
 ├── logs/
-│   ├── v4/      # VGG16-siamese, SGD + aug + L4-5 finetune + LR schedule (unaligned)
-│   ├── v5/      # same as v4, MTCNN-aligned + full augmentation
-│   ├── r4/      # ResNet50-siamese, SGD + aug + L4-5 finetune + LR schedule (unaligned)
-│   ├── r5/      # same as r4, MTCNN-aligned + full augmentation
-│   ├── af1/     # ResNet50-ArcFace, 224x224, layer3/4 finetune (new method)
-│   ├── af2/     # ResNet50-ArcFace, unaligned, light augmentation
-│   ├── af3/     # ResNet50-ArcFace, aligned, full augmentation
-│   ├── af4/     # ResNet50-ArcFace, 224x224, without TTA, aligned datasets
-│   └── scratch/ # reference_paper_reproduction/ results (LFW only)
+│   ├── v4/      
+│   ├── v5/      
+│   ├── r4/      
+│   ├── r5/      
+│   ├── af1/     
+│   ├── af2/     
+│   ├── af3/     
+│   ├── af4/     
+│   └── scratch/ 
 ├── gradcam_results/face_region_metric/
 ├── results_summary/                 # baseline comparison tables/plots
 └── reference_paper_reproduction/    # from-scratch siamese-VGG reproduction of
@@ -45,8 +45,8 @@ comparison, and Grad-CAM based explainability analysis.
 ## Datasets
 
 - CelebA: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
-- CASIA-WebFace: https://paperswithcode.com/dataset/casia-webface (research-use license)
-- LFW: https://vis-www.cs.umass.edu/lfw/
+- CASIA-WebFace: https://www.kaggle.com/datasets/debarghamitraroy/casia-webface
+- LFW: https://www.kaggle.com/datasets/jessicali9530/lfw-dataset
 
 Point `config.py` at wherever you download/align them locally.
 
